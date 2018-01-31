@@ -10,29 +10,26 @@ import Head from 'next/head';
 
 import * as styles from '../layouts/styles';
 
-
-
 class Page extends React.Component {
-
   render() {
     return (
       <BaseLayout>
-
-        <Hero backgroundImage="static/gustavo-quepon-129114.jpg">
+        <Hero backgroundImage="static/francisco-moreno-65893.jpg">
           <Container className="hero inner">
             <Row className="hero row">
               <Col smOffset={1} sm={10} className="hero col text">
                 {heroCopy}
               </Col>
             </Row>
-            <Row>asdas
+            <Row>
+              asdas
               <Col smOffset={1} sm={10} className="hero col text">
-              <div className="test1" >
-                  {sampleSlide1}
-                  {sampleSlide2}
-                  {sampleSlide3}
-                  {sampleSlide4}
-              </div>
+                <div className="test1">
+                  {aroundYou}
+                  {meet}
+                  {hottoday}
+                  {feedbacks}
+                </div>
               </Col>
             </Row>
           </Container>
@@ -50,60 +47,53 @@ class Page extends React.Component {
 const heroCopy = (
   <div>
     <h1>
-      {'Organi'}
-      <strong style={{color:"red"}}>{'Grid '}</strong>
+      {'appnING'}
+      <strong style={{ color: 'red' }}>{'! '}</strong>
     </h1>
-    <h3>{"SmartCity meets SmartGrid"}</h3>
-    <p>
-      {
-        "Renewable energy has changed. "
-      }
-    </p>
-    <p2>
-      {
-        "Smart Consumption Prediction. Energy Market Enabling. "
-      }
-    </p2>
+    <h3>{'Get inside.'}</h3>
+    <p>{'Forget old event agendas'}</p>
 
+    <p>{"Navigate trough what's appnING around you."}</p>
+    <p>{'Real-time.'}</p>
   </div>
 );
 
-const sampleSlide1 = (
+const meet = (
   <div className="slide">
     <div className="slide-inner">
       <ol align="center">
-         <img  src="static/market.svg" />
-          {"Consumption Smart Prediction."}
+        <img src="static/people.svg" />
+        {'Meet.'}
       </ol>
     </div>
   </div>
 );
-const sampleSlide2 = (
+const hottoday = (
   <div className="slide">
     <div className="slide-inner">
       <ol align="center">
-      <img  src="static/graph.svg" />
-       {"Consumption Smart Prediction."}
+        <img src="static/hotnot.svg" />
+        {"What's Hot today?"}
       </ol>
     </div>
   </div>
 );
-const sampleSlide3 = (
-  <div className="slide">
-    <div className="slide-inner">
-    <ol align="center">
-    <img  src="static/power.svg" />
-     {"Load Shedding."}
-    </ol>
-    </div>
-  </div>
-);
-const sampleSlide4 = (
+const feedbacks = (
   <div className="slide">
     <div className="slide-inner">
       <ol align="center">
-      <img  src="static/mlearning.svg" />
-       {"Machine Learning."}
+        <img src="static/feedback.svg" />
+        {'Realtime Event Feedbacks.'}
+      </ol>
+    </div>
+  </div>
+);
+const aroundYou = (
+  <div className="slide">
+    <div className="slide-inner">
+      <ol align="center">
+        <img src="static/explore.svg" />
+        {"What's around you?"}
       </ol>
     </div>
   </div>
@@ -118,8 +108,6 @@ const challengesCopy = (
     {" Technically we're not supposed to go to the bathroom."}
   </p>
 );
-
-
 
 const homeStyles = css`
   img {
@@ -152,7 +140,7 @@ const homeStylesGlobal = css`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 250px !important;
+    max-height: 250px !important;
     width: auto;
 
   }
